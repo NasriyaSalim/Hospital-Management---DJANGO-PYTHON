@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+
+{% extends 'base.html' %}
+
+
+{% block title %}
+<h1>Booking</h1>
+{% endblock %}
+{% block content %}
+<h1 class="text-center">Make An Appoinment</h1>
+<hr>
+<div class="container w-50 text-center p-3 my-5 bg-info">
+<form action= "" method = "POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type = "submit" class ="btn btn-primary mb-4">Submit</button>
+    
+</form>
+</div>
+
+{% endblock %}
+
+
+<!--<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>booking</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>booking page</h1>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
+
